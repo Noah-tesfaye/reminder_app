@@ -12,8 +12,8 @@ void main() {
             ListTile(
               leading: Icon(
                 Icons.check_circle,
-                color: Colors.green
-                ),
+                color: Colors.green,
+              ),
               title: Text(
                 'Practice Flutter',
               ),
@@ -25,6 +25,12 @@ void main() {
               ),
               title: Text(
                 'Buy groceries',
+                style: TextStyle(
+                  decoration:
+                      TextDecoration
+                          .lineThrough,
+                  color: Colors.grey,
+                ),
               ),
               subtitle: Text(
                 'Tommorow',
@@ -32,6 +38,13 @@ void main() {
             ),
           ],
         ),
+        floatingActionButton:
+            FloatingActionButton(
+              onPressed: () {},
+              child: const Icon(
+                Icons.add,
+              ),
+            ),
       ),
     ),
   );
